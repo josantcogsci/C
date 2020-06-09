@@ -24,7 +24,7 @@ int main(void)
             ++bnk;
         if (c == '\t')
             ++tab;
-        if ( c == '\n')
+        if ( c == '\n'  )
             ++nl;
     }
 
