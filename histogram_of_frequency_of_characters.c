@@ -10,16 +10,16 @@
 #include <stdio.h>
 #include <ctype.h>
 
-#define MAXHIST 15      /* Max length of histogram */
-#define MAXCHAR 128     /* Max different characters */
+#define MAXHIST 15  /* Max length of histogram */
+#define MAXCHAR 128 /* Max different characters */
 
 /* print horizontal histogram freq. of different characters */
 int main(void)
 {
     int c, i;
-    int len;            /* length of each bar */
-    int maxvalue;       /* maximun value for cc[] */
-    int cc[MAXCHAR];    /* character counters */
+    int len;         /* length of each bar */
+    int maxvalue;    /* maximun value for cc[] */
+    int cc[MAXCHAR]; /* character counters */
 
     for (i = 0; i < MAXCHAR; ++i)
         cc[i] = 0;
@@ -41,7 +41,8 @@ int main(void)
         {
             if ((len = cc[i] * MAXHIST / maxvalue) <= 0)
                 len = 1;
-        } else
+        }
+        else
             len = 0;
         while (len > 0)
         {
