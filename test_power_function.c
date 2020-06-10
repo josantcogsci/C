@@ -1,0 +1,33 @@
+/**
+ * ' Test Power Function '
+ * Written by José Antonio Mendoza Chávez
+ * Wednesday, June 10th, 2020
+ * E-mail: ja.mendozachavez@gmail.com
+ * Github: https://github.com/josantcogsci
+ * LinkedIn: https://www.linkedin.com/in/josantcogsci
+ */
+
+#include <stdio.h>
+
+int power(int m, int n);
+
+/* Test Power Function */
+int main()
+{
+    int i;
+
+    for (i = 0; i < 0; ++i)
+        printf("%d %d %d\n", i, power(2, i), power(-3, i));
+    return 0;
+}
+
+/* power: raise base to n-th power; n >= 0 */
+int power(int base, int n)
+{
+    int i, p;
+
+    p = 1;
+    for (i = 1; i <= n; ++i)    
+        p = p * base;
+    return p;
+}
